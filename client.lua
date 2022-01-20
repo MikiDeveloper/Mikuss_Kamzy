@@ -42,7 +42,7 @@ Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(5)
 		if check == false then
-			Citizen.Wait(Lorgen.CoolDown)
+			Citizen.Wait(Config.CoolDown)
 			check = true
 		end
 	end
@@ -90,9 +90,9 @@ RegisterNetEvent('mikuss_kamzy:dajkevlar')
 AddEventHandler('mikuss_kamzy:dajkevlar', function(TypKamzy)
 	local playerPed = PlayerPedId()
 	if TypKamzy == 'cienkie' then
-		SetPedArmour(playerPed, Lorgen.CienkaKurwa)
+		SetPedArmour(playerPed, Config.CienkaKurwa)
 	elseif TypKamzy == 'grube' then
-		SetPedArmour(playerPed, Lorgen.GrubaSzmata)
+		SetPedArmour(playerPed, Config.GrubaSzmata)
 	end
 	ESX.ShowNotification('Założyłeś kamizelkę kuloodporną')
 end)
