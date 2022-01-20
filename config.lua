@@ -1,12 +1,12 @@
 
 
-Lorgen = {}
+Config = {}
 
 
 
-Lorgen.GrubaSzmata = 100
+Config.GrubaSzmata = 100
 
-Lorgen.CienkaKurwa = 50 
+Config.CienkaKurwa = 50 
 
-Lorgen.CoolDown = 60000 
+Config.CoolDown = 60000 
 
